@@ -344,7 +344,7 @@ const socialImgs = [
   {
     name: "cv",
     imgPath: "/images/resume.png",
-    link: "",
+    link: "https://drive.google.com/file/d/1vxQ_WPARvhEfnsbfR2RubtKm_dZW04yO/view?usp=sharing",
   },
 ];
 
