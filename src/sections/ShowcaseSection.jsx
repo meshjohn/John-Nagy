@@ -89,7 +89,11 @@ const ShowcaseSection = () => {
                   <div key={project.id} className="project project-card-anim pointer-events-auto">
                     <div
                       className="image-wrapper group overflow-hidden"
-                      style={{ backgroundColor: project.bg || "#1C1C21" }}
+                      style={
+                        project.bg?.startsWith("linear-gradient")
+                          ? { backgroundImage: project.bg }
+                          : { backgroundColor: project.bg || "#1C1C21" }
+                      }
                     >
                       <img
                         src={project.img}

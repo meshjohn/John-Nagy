@@ -48,9 +48,9 @@ const Skills = () => {
       // Trigger the animation when the timeline is at the top of the screen
       // and end it when the timeline is at 70% down the screen
       scrollTrigger: {
-        trigger: ".timeline",
+        trigger: "#skills-container",
         start: "top center",
-        end: "70% center",
+        end: "bottom bottom",
         // Update the animation as the user scrolls
         onUpdate: (self) => {
           // Scale the timeline height as the user scrolls
@@ -71,9 +71,8 @@ const Skills = () => {
       gsap.from(text, {
         // Set the opacity of the text to 0
         opacity: 0,
-        // Move the text from the left to its final position
-        // (xPercent: 0 means the text is at its final position)
-        xPercent: 0,
+        // Move the text down by 50px so it slides up
+        y: 50,
         // Animate over 1 second
         duration: 1,
         // Use a power2 ease-in-out curve
@@ -100,7 +99,7 @@ const Skills = () => {
           sub="🛠️ My Tech Stack"
         />
         <div className="mt-32 relative">
-          <div className="relative z-50 xl:space-y-32 space-y-10">
+          <div id="skills-container" className="relative z-50 xl:space-y-32 space-y-10">
             {skills.map((skill) => (
               <div key={skill.title} className="exp-card-wrapper">
                 <div className="xl:w-2/6">

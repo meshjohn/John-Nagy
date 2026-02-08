@@ -223,45 +223,47 @@ const projects = [
     id: 1,
     title: "CarePulse",
     subdesc: "Appointment Hospital App with Admin Dashboard.",
-    img: "/images/carepulse.jpeg",
+    img: "/images/carepulse.png",
     bg: "#e0f7fa",
   },
   {
-    id: 2,
+    id: 6,
+    title: "Classroom - University Management System",
+    subdesc:
+      "A comprehensive solution for managing university resources and operations.",
+    img: "/images/Classroom.png",
+    bg: "linear-gradient(135deg, #422419 0%, #000000 100%)", // Dark gradient - charcoal to teal
+  },
+  {
+    id: 3,
     title: "Library Management Platform",
     subdesc: "A comprehensive solution for managing library resources.",
     img: "/images/project2.png",
     bg: "#ffefdb",
   },
   {
-    id: 3,
-    title: "Physiverse Learning Platform",
-    subdesc: "Track engagement and growth across multiple platforms.",
-    img: "/images/physiverse.jpeg",
-    bg: "",
-  },
-  {
     id: 4,
     title: "Tasky AI - Create Schedule By the AI Assistant",
     subdesc:
       "An app built with React, GEMINI API, & TailwindCSS for a fast, user friendly experience.",
-    img: "/images/taskyai.jpeg",
-    bg: "",
+    img: "/images/tasky.png",
+    bg: "#fff3e0", // Light orange/peach - matches the warm orange accent in the app
   },
   {
     id: 5,
-    title: "Signalist - Stock Tracker App",
-    subdesc:
-      "A directory for Y Combinator startups to showcase their products.",
-    img: "/images/signalist.jpeg",
-    bg: "#ffe7eb",
+    title: "Physiverse Learning Platform",
+    subdesc: "Track engagement and growth across multiple platforms.",
+    img: "/images/physiverse.png",
+    bg: "linear-gradient(135deg, #000000 0%, #2D3436 100%)", // Dark blue-gray - matches the dark UI theme
   },
+
   {
     id: 6,
     title: "Travel Agency Dashboard",
-    subdesc: "Monitor workouts and diet with personalized recommendations.",
-    img: "/images/Travelagency.jpeg", // Reusing image
-    bg: "#f3e5f5", // Large card usually doesn't have bg color usage in this design
+    subdesc:
+      "A comprehensive solution for managing travel agency resources and operations.",
+    img: "/images/travel.png",
+    bg: "linear-gradient(135deg, #D7E1EC 0%, #FFFFFF 100%)", // Light teal/mint - matches the clean, fresh travel theme
   },
 ];
 
